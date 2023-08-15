@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Fare Calculator</title>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            background-image: url("/static/css/flight.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Page Styles */
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            animation: fade-in 1s ease-in;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .description {
+            font-size: 20px;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* CSS Animations */
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="/">Home</a>
+    </nav>
+
+   <!-- Your existing code -->
+
+<div class="container">
+    <h1>Welcome to Flight Fare Calculator</h1>
+    <p class="description"><i>Gone are the days of booking overpriced flights! Flight Price Predictor is your ultimate weapon for making amazing ticket price predictions based on various factors. You choose where you’re flying from, your destination, departure and arrival dates, the number of stops, and even the airline. We do the rest to make sure you're getting the best deal out there! No more guesswork, just accurate, reliable predictions that'll save you both time and money.</i></p>
+    <!-- Change the form action to the '/predict' route -->
+    <form action="/home" method="post">
+        <a href="home.html"><button type="submit">Calculate Flight Fare</button></a>
+    </form>
+</div>
+
+<!-- Your existing code -->
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Example JavaScript animation
+        $(document).ready(function() {
+            $('.container').fadeIn(1000);
+        });
+    </script>
+</body>
+
+</html>
